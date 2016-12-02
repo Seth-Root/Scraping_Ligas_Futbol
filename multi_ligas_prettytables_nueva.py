@@ -30,14 +30,33 @@ for url in urls:
 
   tabla_formateada = []
 
+  nueva_form = []
   
   equipo_nombre = []
   posicion_eq = []
   #Listas para totales
-]
+  PJ_totales = []
+  PG_totales = []
+  PE_totales = []
+  PP_totales = []
+  Goles_Favor_totales = []
+  Goles_contra_totales = []
   Goles_Diferencia = []
   Puntos_tot = []
-
+#Listas para casa
+  PJ_totales = []
+  PG_totales = []
+  PE_totales = []
+  PP_totales = []
+  Goles_Favor_totales = []
+  Goles_contra_totales = []
+#Listas para visita
+  PJ_totales = []
+  PG_totales = []
+  PE_totales = []
+  PP_totales = []
+  Goles_Favor_totales = []
+  Goles_contra_totales = []
 
   i = 0
   for datos  in results:
@@ -70,7 +89,35 @@ for url in urls:
       equipo_nom = equipo_nom.strip()
       equipo_nombre.append(equipo_nom)
         
+      #Listas para totales
+      PJ_totales = []
+      PG_totales = []
+      PE_totales = []
+      PP_totales = []
+      Goles_Favor_totales = []
+      Goles_contra_totales = []
+        
+      Goles_Dif = h[-2]
+      Goles_Diferencia.append(Goles_Dif)
+        
+      Puntos = h[-1]
+      Puntos_tot.append(Puntos)
 
+        
+      #Listas para casa
+      PJ_totales = []
+      PG_totales = []
+      PE_totales = []
+      PP_totales = []
+      Goles_Favor_totales = []
+      Goles_contra_totales = []
+      #Listas para visita
+      PJ_totales = []
+      PG_totales = []
+      PE_totales = []
+      PP_totales = []
+      Goles_Favor_totales = []
+      Goles_contra_totales = []
       
   numero_items = len(posicion_eq)
    
